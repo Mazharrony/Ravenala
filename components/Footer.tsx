@@ -138,7 +138,24 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
-          <p>Made with care in Moalboal, Cebu.</p>
+          <a
+            href="https://www.meetmazhar.site"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 rounded-full border border-cream/10 bg-cream/[0.03] px-4 py-2 text-cream/60 transition-colors hover:border-foam/30 hover:bg-cream/[0.06] hover:text-cream"
+          >
+            <span
+              aria-hidden
+              className="h-1.5 w-1.5 rounded-full bg-foam shadow-[0_0_8px_var(--color-foam)] transition-transform group-hover:scale-125"
+            />
+            Crafted by{" "}
+            <span className="font-medium text-cream/90 transition-colors group-hover:text-foam">
+              Mazhar
+            </span>
+            <span className="transition-transform group-hover:translate-x-0.5">
+              ↗
+            </span>
+          </a>
         </div>
       </div>
     </footer>
