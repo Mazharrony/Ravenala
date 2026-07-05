@@ -1,0 +1,111 @@
+import Image from "next/image";
+import Reveal from "@/components/ui/Reveal";
+import { site, nav } from "@/lib/data";
+
+export default function Footer() {
+  return (
+    <footer className="relative overflow-hidden bg-deep text-cream">
+      {/* CTA band */}
+      <div className="relative mx-auto max-w-7xl px-6 pt-24 sm:pt-32">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute left-1/2 top-10 h-72 w-72 -translate-x-1/2 rounded-full bg-ocean/30 blur-3xl"
+        />
+        <Reveal>
+          <div className="relative text-center">
+            <p className="eyebrow text-foam">Plan your next getaway</p>
+            <h2 className="font-display mx-auto mt-5 max-w-3xl text-balance text-4xl font-light leading-[1.08] tracking-tight sm:text-6xl">
+              Your story by the sea
+              <span className="italic text-foam"> starts here.</span>
+            </h2>
+            <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <a
+                href={site.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-full bg-coral px-8 py-4 text-sm font-semibold text-white shadow-glow transition-colors hover:bg-coral-600"
+              >
+                Reserve your stay →
+              </a>
+
+            </div>
+          </div>
+        </Reveal>
+      </div>
+
+      {/* Links */}
+      <div className="relative mx-auto mt-20 max-w-7xl px-6">
+        <div className="grid gap-10 border-t border-cream/10 py-12 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="lg:col-span-2">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/logo.png"
+                alt={site.name}
+                width={48}
+                height={48}
+                className="h-12 w-12 rounded-full"
+              />
+              <span className="font-display text-2xl">
+                Ravenala<span className="text-foam">.</span>
+              </span>
+            </div>
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream/60">
+              A family-run beach hideaway on {site.location}. Overlooking Tañon
+              Strait since {site.established}.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="eyebrow text-cream/50">Explore</h3>
+            <ul className="mt-4 space-y-2.5">
+              {nav.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="text-sm text-cream/70 transition-colors hover:text-foam"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="eyebrow text-cream/50">Connect</h3>
+            <ul className="mt-4 space-y-2.5">
+              <li>
+                <a
+                  href={site.socials.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-cream/70 transition-colors hover:text-foam"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href={site.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-cream/70 transition-colors hover:text-foam"
+                >
+                  Instagram
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-between gap-3 border-t border-cream/10 py-8 text-xs text-cream/50 sm:flex-row">
+          <p>
+            © {new Date().getFullYear()} {site.name}. All rights reserved.
+          </p>
+          <p>Made with care in Moalboal, Cebu.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
