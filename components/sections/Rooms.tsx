@@ -80,6 +80,7 @@ export default function Rooms() {
                   </ul>
                   <div className="mt-auto flex items-end justify-between border-t border-ink/10 pt-5">
                     <div>
+                      <span className="block text-xs text-ink/50">Starting from</span>
                       <span className="font-display text-2xl font-medium text-deep">
                         ₱{peso(room.price)}
                       </span>

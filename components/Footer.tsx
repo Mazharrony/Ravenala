@@ -27,7 +27,6 @@ export default function Footer() {
               >
                 Reserve your stay →
               </a>
-
             </div>
           </div>
         </Reveal>

@@ -55,7 +55,7 @@ export const rooms: Room[] = [
     price: 4750,
     blurb:
       "Relaxed space for small groups who want the shoreline just a few footsteps away.",
-    features: ["Direct beach access", "Mini-bar", "Free WiFi"],
+    features: ["Direct beach access", "Daily housekeeping", "Free WiFi"],
     image: "/images/room2.png",
   },
   {
@@ -94,7 +94,7 @@ export const amenities: AmenityGroup[] = [
     items: [
       "Air-conditioning",
       "Private terrace",
-      "Mini-bar",
+      "Hot & cold shower",
       "In-room safe",
       "Wardrobe",
       "Mosquito net",
@@ -166,7 +166,7 @@ export const experiences: Experience[] = [
     title: "Beyond the Shore",
     description:
       "Canyoneering at Kawasan, waterfall tours, island hopping, and whale watching — we arrange it all for you.",
-    image: "/images/bar.png",
+    image: "/images/diningfun.png",
   },
 ];
 
