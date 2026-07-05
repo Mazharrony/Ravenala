@@ -5,6 +5,15 @@ export const site = {
   location: "White Beach, Moalboal, Cebu, Philippines",
   established: 1997,
   bookingUrl: "https://book-directonline.com/properties/ravenalabeachbungalows",
+  email: "info@ravenalabeach.com",
+  phone: "+639369979697",
+  address: {
+    barangay: "Brgy. Saavedra",
+    city: "Moalboal",
+    island: "Cebu Island",
+    country: "Philippines",
+  },
+  mapsUrl: "https://www.google.com/maps?cid=7645962946630375798",
   socials: {
     facebook: "https://www.facebook.com/ravenalabeachbungalowsofficial",
     instagram: "https://www.instagram.com/ravenalabeachbungalows/",
@@ -168,6 +177,12 @@ export const gallery = [
   { src: "/images/outdoor.png", alt: "Garden grounds and bungalows" },
   { src: "/images/scooba.png", alt: "Scuba diving the Moalboal house reef" },
   { src: "/images/staff.png", alt: "The Ravenala family and staff" },
+  { src: "/images/gmaps1.jpg", alt: "Ravenala Beach Bungalows" },
+  { src: "/images/gmaps2.jpg", alt: "Ravenala Beach Bungalows" },
+  { src: "/images/gmaps3.jpg", alt: "Ravenala Beach Bungalows" },
+  { src: "/images/gmaps5.jpg", alt: "Ravenala Beach Bungalows" },
+  { src: "/images/gmaps6.jpg", alt: "Ravenala Beach Bungalows" },
+  { src: "/images/gmaps7.jpg", alt: "Ravenala Beach Bungalows" },
 ];
 
 export type Testimonial = { quote: string; name: string; stars: number };

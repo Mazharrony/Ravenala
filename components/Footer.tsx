@@ -72,6 +72,42 @@ export default function Footer() {
           </div>
 
           <div>
+            <h3 className="eyebrow text-cream/50">Find Us</h3>
+            <ul className="mt-4 space-y-2.5">
+              <li>
+                <a
+                  href={site.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-cream/70 transition-colors hover:text-foam"
+                >
+                  {site.address.barangay}, {site.address.city}<br />
+                  {site.address.island}<br />
+                  {site.address.country}
+                </a>
+              </li>
+              <li className="pt-2">
+                <p className="text-xs text-cream/50">Phone</p>
+                <a
+                  href={`tel:${site.phone}`}
+                  className="text-sm text-cream/70 transition-colors hover:text-foam"
+                >
+                  {site.phone}
+                </a>
+              </li>
+              <li className="pt-1">
+                <p className="text-xs text-cream/50">Email</p>
+                <a
+                  href={`mailto:${site.email}`}
+                  className="text-sm text-cream/70 transition-colors hover:text-foam"
+                >
+                  {site.email}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <h3 className="eyebrow text-cream/50">Connect</h3>
             <ul className="mt-4 space-y-2.5">
               <li>
