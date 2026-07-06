@@ -190,8 +190,8 @@ export type Testimonial = { quote: string; name: string; stars: number };
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Ravenala is a must visit. Definitely the best resort in all of Moalboal! Great service, good food, and a relaxing ambiance. Don't miss your chance to experience paradise.",
-    name: "Justive Macaraya",
+      "Service from the staff is impeccable...made to feel like you're the VIP here. Had the bungalow that was 20 steps away from the beach...and right next to the bar!",
+    name: "Nemesio Diego",
     stars: 5,
   },
   {
