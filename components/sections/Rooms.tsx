@@ -1,12 +1,19 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import Reveal from "@/components/ui/Reveal";
 import SectionHeading from "@/components/ui/SectionHeading";
+import Lightbox from "@/components/ui/Lightbox";
 import { rooms, rateNotes, site } from "@/lib/data";
 
 const peso = (n: number) =>
   new Intl.NumberFormat("en-PH", { maximumFractionDigits: 0 }).format(n);
 
 export default function Rooms() {
+  const [open, setOpen] = useState<{ room: number; photo: number } | null>(null);
+  const activeRoom = open === null ? null : rooms[open.room];
+
   return (
     <section id="rooms" className="relative bg-sand/40 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6">
@@ -42,10 +49,15 @@ export default function Rooms() {
                   room.featured ? "ring-2 ring-coral/60" : "",
                 ].join(" ")}
               >
-                <div className="relative aspect-4/3 overflow-hidden">
+                <button
+                  type="button"
+                  onClick={() => setOpen({ room: i, photo: 0 })}
+                  aria-label={`View ${room.images.length} photos of the ${room.name}`}
+                  className="relative aspect-4/3 overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ocean"
+                >
                   <Image
-                    src={room.image}
-                    alt={room.name}
+                    src={room.images[0].src}
+                    alt={room.images[0].alt}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -59,7 +71,34 @@ export default function Rooms() {
                   <span className="absolute bottom-4 left-4 rounded-full glass-dark px-3 py-1 text-xs font-medium text-cream">
                     {room.guests}
                   </span>
-                </div>
+                  <span className="absolute bottom-4 right-4 flex items-center gap-1.5 rounded-full glass-dark px-3 py-1 text-xs font-medium text-cream">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      aria-hidden
+                    >
+                      <rect
+                        x="3"
+                        y="5"
+                        width="18"
+                        height="14"
+                        rx="2.5"
+                        stroke="currentColor"
+                        strokeWidth="1.8"
+                      />
+                      <path
+                        d="M3 16l4.5-4.5 4 4L15 12l6 5.5"
+                        stroke="currentColor"
+                        strokeWidth="1.8"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    {room.images.length}
+                  </span>
+                </button>
 
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="font-display text-2xl font-normal text-deep">
@@ -112,6 +151,17 @@ export default function Rooms() {
           </ul>
         </Reveal>
       </div>
+
+      <Lightbox
+        images={activeRoom?.images ?? []}
+        caption={activeRoom?.name}
+        index={open?.photo ?? null}
+        onIndexChange={(photo) =>
+          setOpen((prev) =>
+            photo === null || prev === null ? null : { ...prev, photo }
+          )
+        }
+      />
     </section>
   );
 }

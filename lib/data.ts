@@ -35,7 +35,8 @@ export type Room = {
   price: number;
   blurb: string;
   features: string[];
-  image: string;
+  /** First entry is used as the card image. */
+  images: { src: string; alt: string }[];
   featured?: boolean;
 };
 
@@ -47,7 +48,40 @@ export const rooms: Room[] = [
     blurb:
       "An intimate retreat for couples, wrapped in sea breeze and framed by a private terrace.",
     features: ["Sea or garden view", "Air-conditioned", "Private terrace"],
-    image: "/images/room.png",
+    images: [
+      {
+        src: "/images/rooms/double-queen/01-wide.jpg",
+        alt: "Double room with queen-sized bed and garden doorway",
+      },
+      {
+        src: "/images/rooms/double-queen/02-wide2.jpg",
+        alt: "Queen-sized bed and seating area in the double room",
+      },
+      {
+        src: "/images/rooms/double-queen/03-wide3.jpg",
+        alt: "Double room with mosquito net and open terrace door",
+      },
+      {
+        src: "/images/rooms/double-queen/04-bath.jpg",
+        alt: "Tiled bathroom with hot and cold shower in the double room",
+      },
+      {
+        src: "/images/rooms/double-twin/01-wide.jpg",
+        alt: "Twin room with two single beds and a garden view",
+      },
+      {
+        src: "/images/rooms/double-twin/02-wide2.jpg",
+        alt: "Two single beds beneath the air-conditioning unit",
+      },
+      {
+        src: "/images/rooms/double-twin/03-wide3.jpg",
+        alt: "Twin room interior with terracotta floor",
+      },
+      {
+        src: "/images/rooms/double-twin/04-bath.jpg",
+        alt: "Bathroom with walk-in shower in the twin room",
+      },
+    ],
   },
   {
     name: "Triple Room",
@@ -56,7 +90,56 @@ export const rooms: Room[] = [
     blurb:
       "Relaxed space for small groups who want the shoreline just a few footsteps away.",
     features: ["Direct beach access", "Daily housekeeping", "Free WiFi"],
-    image: "/images/room2.png",
+    images: [
+      {
+        src: "/images/rooms/triple/01-wide.jpg",
+        alt: "Triple room with a double bed and an extra single bed",
+      },
+      {
+        src: "/images/rooms/triple/02-wide2.jpg",
+        alt: "Triple room interior beneath a peaked bungalow ceiling",
+      },
+      {
+        src: "/images/rooms/triple/03-seaview.jpg",
+        alt: "Triple room looking out to the sea through an open door",
+      },
+      {
+        src: "/images/rooms/triple/04-seaview2.jpg",
+        alt: "Bed framed by the sea view from the triple room",
+      },
+      {
+        src: "/images/rooms/triple/05-bed.jpg",
+        alt: "Made-up bed with bedside lamps in the triple room",
+      },
+      {
+        src: "/images/rooms/triple/06-bed2.jpg",
+        alt: "Triple room with curtained windows and tiled floor",
+      },
+      {
+        src: "/images/rooms/triple/07-beds.jpg",
+        alt: "Two beds turned down with towel swans",
+      },
+      {
+        src: "/images/rooms/triple/08-swans.jpg",
+        alt: "Towel swans and hibiscus flowers on the bed",
+      },
+      {
+        src: "/images/rooms/triple/09-swans2.jpg",
+        alt: "Towel art laid out across the bed in the triple room",
+      },
+      {
+        src: "/images/rooms/triple/10-single.jpg",
+        alt: "Single bed and air-conditioning in the triple room",
+      },
+      {
+        src: "/images/rooms/triple/11-swans3.jpg",
+        alt: "Close view of towel swans on the triple room bed",
+      },
+      {
+        src: "/images/rooms/triple/12-bath.jpg",
+        alt: "Bathroom with basin and shower in the triple room",
+      },
+    ],
   },
   {
     name: "Family Room",
@@ -65,7 +148,28 @@ export const rooms: Room[] = [
     blurb:
       "Room to gather, unwind, and let the little ones roam free — kids under seven stay free.",
     features: ["Extra beds available", "Safe & wardrobe", "Garden setting"],
-    image: "/images/room4.png",
+    images: [
+      {
+        src: "/images/rooms/family/01-wide.jpg",
+        alt: "Family room with four-poster bed and garden-facing windows",
+      },
+      {
+        src: "/images/rooms/family/02-wide2.jpg",
+        alt: "Family room with wardrobe, safe, and bamboo detailing",
+      },
+      {
+        src: "/images/rooms/family/03-wide3.jpg",
+        alt: "Wide view of the family room and its louvred windows",
+      },
+      {
+        src: "/images/rooms/family/04-bunk.jpg",
+        alt: "Extra bed for children beside the main bed",
+      },
+      {
+        src: "/images/rooms/family/05-bath.jpg",
+        alt: "Family room bathroom with twin basins",
+      },
+    ],
     featured: true,
   },
   {
@@ -75,7 +179,48 @@ export const rooms: Room[] = [
     blurb:
       "The generous choice for friends chasing sunsets, reef dives, and long shared mornings.",
     features: ["Sleeps five", "Beach bar nearby", "Free secured parking"],
-    image: "/images/room3.png",
+    images: [
+      {
+        src: "/images/rooms/barkada/01-wide.jpg",
+        alt: "Barkada room sleeping five under a high blue ceiling",
+      },
+      {
+        src: "/images/rooms/barkada/02-door.jpg",
+        alt: "Barkada room with wooden door and terracotta floor",
+      },
+      {
+        src: "/images/rooms/barkada/03-twins.jpg",
+        alt: "Twin beds turned down with towel swans in the barkada room",
+      },
+      {
+        src: "/images/rooms/barkada/04-twins2.jpg",
+        alt: "Beds and desk beside the garden doorway",
+      },
+      {
+        src: "/images/rooms/barkada/05-bed.jpg",
+        alt: "Double bed with towel swans in the barkada room",
+      },
+      {
+        src: "/images/rooms/barkada/06-bed2.jpg",
+        alt: "Bed with green curtains and a sea painting above",
+      },
+      {
+        src: "/images/rooms/barkada/07-bed3.jpg",
+        alt: "Turned-down bed in the barkada room",
+      },
+      {
+        src: "/images/rooms/barkada/08-corner.jpg",
+        alt: "Corner of the barkada room with air-conditioning",
+      },
+      {
+        src: "/images/rooms/barkada/09-bath.jpg",
+        alt: "Barkada room bathroom with basin and round mirror",
+      },
+      {
+        src: "/images/rooms/barkada/10-terrace.jpg",
+        alt: "Shaded terrace and seating outside the barkada bungalow",
+      },
+    ],
   },
 ];
 
@@ -171,19 +316,133 @@ export const experiences: Experience[] = [
 ];
 
 export const gallery = [
-  { src: "/images/outdoorbeach.png", alt: "White Beach shoreline and banca boat at Ravenala" },
-  { src: "/images/bar.png", alt: "Al fresco beach bar at Ravenala" },
-  { src: "/images/diningfun.png", alt: "Guests dining together by the shore" },
-  { src: "/images/outdoor.png", alt: "Garden grounds and bungalows" },
-  { src: "/images/scooba.png", alt: "Scuba diving the Moalboal house reef" },
-  { src: "/images/staff.png", alt: "The Ravenala family and staff" },
-  { src: "/images/gmaps1.jpg", alt: "Ravenala Beach Bungalows" },
-  { src: "/images/gmaps2.jpg", alt: "Ravenala Beach Bungalows" },
-  { src: "/images/gmaps3.jpg", alt: "Ravenala Beach Bungalows" },
-  { src: "/images/gmaps5.jpg", alt: "Ravenala Beach Bungalows" },
-  { src: "/images/gmaps6.jpg", alt: "Ravenala Beach Bungalows" },
-  { src: "/images/gmaps7.jpg", alt: "Ravenala Beach Bungalows" },
+  {
+    src: "/images/property/beachfront.jpg",
+    width: 2000,
+    height: 1500,
+    alt: "The Ravenala Beach Cafe sign and shaded tables on White Beach",
+  },
+  {
+    src: "/images/property/beach-loungers.jpg",
+    width: 1916,
+    height: 2000,
+    alt: "Sun loungers and a banca boat on the shoreline",
+  },
+  {
+    src: "/images/property/palms-sunset.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "Palm silhouettes against a sunset over Tañon Strait",
+  },
+  {
+    src: "/images/property/beach-bar.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "The al fresco beach bar beneath its nipa roof",
+  },
+  {
+    src: "/images/property/garden-path.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "Stepping-stone path winding through the garden to the bungalows",
+  },
+  {
+    src: "/images/property/nipa-loungers.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "A nipa hut and sun loungers looking out to the water",
+  },
+  {
+    src: "/images/property/sunset-shore.jpg",
+    width: 2000,
+    height: 1500,
+    alt: "Sunset over the sea with Negros Island on the horizon",
+  },
+  {
+    src: "/images/property/long-table.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "The long dining table set beneath the thatched roof",
+  },
+  {
+    src: "/images/property/garden.jpg",
+    width: 2000,
+    height: 1500,
+    alt: "Lush tropical garden surrounding the bungalows",
+  },
+  {
+    src: "/images/property/shoreline.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "Loungers in the shade of the trees at the water's edge",
+  },
+  {
+    src: "/images/property/terrace-view.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "The resort dog on the terrace overlooking the sea",
+  },
+  {
+    src: "/images/property/sunset-palms.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "Sun setting through the palms over calm water",
+  },
+  {
+    src: "/images/property/bungalow-palms.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "A bungalow nestled among the palms",
+  },
+  {
+    src: "/images/property/sign.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "The hand-carved Ravenala sign on a coral stone wall",
+  },
+  {
+    src: "/images/property/hammock.jpg",
+    width: 1125,
+    height: 2000,
+    alt: "A hammock strung between the trees by the beach",
+  },
+  {
+    src: "/images/property/restaurant.jpg",
+    width: 1125,
+    height: 2000,
+    alt: "The open-air restaurant and sand path through the grounds",
+  },
+  {
+    src: "/images/property/garden-puppy.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "A puppy waiting on the garden path",
+  },
+  {
+    src: "/images/property/sunset-clouds.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "Evening clouds drifting over Tañon Strait",
+  },
+  {
+    src: "/images/property/lawn.jpg",
+    width: 1500,
+    height: 2000,
+    alt: "The lawn and stepping stones between the bungalows",
+  },
+  {
+    src: "/images/property/beach-dog.jpg",
+    width: 1501,
+    height: 2000,
+    alt: "The resort dog watching the sea from the sand",
+  },
 ];
+
+/** Full-width panorama used as a section band. */
+export const panorama = {
+  src: "/images/property/beach-panorama.jpg",
+  alt: "Panorama of White Beach and the bungalows at Ravenala",
+};
 
 export type Testimonial = { quote: string; name: string; stars: number };
 
