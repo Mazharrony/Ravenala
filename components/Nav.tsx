@@ -35,7 +35,7 @@ export default function Nav() {
           className={[
             "flex items-center justify-between rounded-full px-5 py-3 transition-all duration-500",
             scrolled
-              ? "glass shadow-card"
+              ? "bg-cream/90 shadow-card ring-1 ring-ink/5 backdrop-blur-xl"
               : "glass-dark ring-1 ring-cream/15",
           ].join(" ")}
         >

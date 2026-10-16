@@ -29,8 +29,8 @@ export default function Story() {
               <div className="absolute -bottom-8 -right-4 hidden w-56 overflow-hidden rounded-2xl border-4 border-cream shadow-card sm:block lg:-right-10">
                 <div className="relative aspect-square">
                   <Image
-                    src="/images/outdoorbeach.png"
-                    alt="White Beach shoreline at Ravenala"
+                    src="/images/gmaps5.jpg"
+                    alt="The Ravenala Beach Cafe sign on White Beach"
                     fill
                     sizes="224px"
                     className="object-cover"

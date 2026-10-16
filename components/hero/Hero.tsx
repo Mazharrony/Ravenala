@@ -26,11 +26,11 @@ export default function Hero() {
       {/* Legibility scrims */}
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-b from-deep/25 via-transparent to-deep/70"
+        className="absolute inset-0 bg-gradient-to-b from-deep/45 via-deep/25 to-deep/80"
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(56%_46%_at_50%_46%,rgba(4,37,44,0.5)_0%,transparent_70%)]"
+        className="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_48%,rgba(4,37,44,0.55)_0%,transparent_75%)]"
       />
 
       {/* Content */}
@@ -58,7 +58,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-          className="mx-auto mt-7 max-w-xl text-balance text-base text-cream/85 sm:text-lg"
+          className="mx-auto mt-7 max-w-xl text-balance text-base text-cream/90 sm:text-lg [text-shadow:0_2px_18px_rgba(4,37,44,0.6)]"
         >
           A family-run beach hideaway on White Beach, Moalboal — bungalows
           overlooking Tañon Strait, a house reef at your doorstep, and unhurried
@@ -84,7 +84,7 @@ export default function Hero() {
           </a>
           <a
             href="#rooms"
-            className="inline-flex h-13 items-center justify-center rounded-full border border-cream/30 px-8 py-3.5 text-sm font-semibold text-cream transition-colors duration-300 hover:bg-cream/10"
+            className="inline-flex h-13 items-center justify-center rounded-full border border-cream/40 glass-dark px-8 py-3.5 text-sm font-semibold text-cream transition-colors duration-300 hover:border-cream/70"
           >
             Explore the bungalows
           </a>

@@ -34,8 +34,8 @@ export default function Footer() {
 
       {/* Links */}
       <div className="relative mx-auto mt-20 max-w-7xl px-6">
-        <div className="grid gap-10 border-t border-cream/10 py-12 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-2">
+        <div className="grid gap-10 border-t border-cream/10 py-12 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1.3fr_0.8fr]">
+          <div>
             <div className="flex items-center gap-3">
               <Image
                 src="/logo.png"
@@ -139,7 +139,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
           <a
-            href="https://www.meetmazhar.site"
+            href="https://prismal.ae"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 rounded-full border border-cream/10 bg-cream/[0.03] px-4 py-2 text-cream/60 transition-colors hover:border-foam/30 hover:bg-cream/[0.06] hover:text-cream"
@@ -150,7 +150,7 @@ export default function Footer() {
             />
             Crafted by{" "}
             <span className="font-medium text-cream/90 transition-colors group-hover:text-foam">
-              Mazhar
+              Prismal
             </span>
             <span className="transition-transform group-hover:translate-x-0.5">
               ↗

@@ -293,19 +293,19 @@ export const experiences: Experience[] = [
     title: "House Reef Diving",
     description:
       "Our famous house reef is steps from your door — the finest spot for scuba, drifting past turtles and coral gardens.",
-    image: "/images/scooba.png",
+    image: "/images/outdoorbeach.png",
   },
   {
     title: "Snorkel & Kayak",
     description:
       "Glide over crystal shallows or paddle the calm of Tañon Strait as the light shifts across the water.",
-    image: "/images/outdoorbeach.png",
+    image: "/images/property/beach-loungers.jpg",
   },
   {
     title: "The Sardine Run",
     description:
       "Minutes away, millions of sardines swirl in living silver clouds — one of Moalboal's great spectacles.",
-    image: "/images/outdoor2.png",
+    image: "/images/scooba.png",
   },
   {
     title: "Beyond the Shore",

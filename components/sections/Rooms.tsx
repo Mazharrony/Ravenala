@@ -40,7 +40,7 @@ export default function Rooms() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {rooms.map((room, i) => (
             <Reveal key={room.name} delay={i} className="h-full">
               <article
