@@ -42,12 +42,12 @@ export type Room = {
 
 export const rooms: Room[] = [
   {
-    name: "Double / Twin",
+    name: "Standard Room",
     guests: "2 guests",
     price: 3750,
     blurb:
-      "An intimate retreat for couples, wrapped in sea breeze and framed by a private terrace.",
-    features: ["Sea or garden view", "Air-conditioned", "Private terrace"],
+      "Simple comfort with everything you need, overlooking the garden and a few meters from the sand.",
+    features: ["Garden view", "Air-conditioned", "Private terrace"],
     images: [
       {
         src: "/images/rooms/double-queen/01-wide.jpg",
@@ -84,60 +84,60 @@ export const rooms: Room[] = [
     ],
   },
   {
-    name: "Triple Room",
-    guests: "3 guests",
-    price: 4750,
+    name: "Seaview Bungalow",
+    guests: "2 guests",
+    price: 4000,
     blurb:
-      "Relaxed space for small groups who want the shoreline just a few footsteps away.",
-    features: ["Direct beach access", "Daily housekeeping", "Free WiFi"],
+      "A private entrance and balcony right on the beach — the perfect place to unwind in the ocean breeze.",
+    features: ["Sea view", "Beachfront balcony", "Private entrance"],
     images: [
       {
-        src: "/images/rooms/triple/01-wide.jpg",
-        alt: "Triple room with a double bed and an extra single bed",
+        src: "/images/rooms/seaview-bungalow/01-wide.jpg",
+        alt: "Seaview bungalow with a double bed and an extra single bed",
       },
       {
-        src: "/images/rooms/triple/02-wide2.jpg",
-        alt: "Triple room interior beneath a peaked bungalow ceiling",
+        src: "/images/rooms/seaview-bungalow/02-wide2.jpg",
+        alt: "Seaview bungalow interior beneath a peaked bungalow ceiling",
       },
       {
-        src: "/images/rooms/triple/03-seaview.jpg",
-        alt: "Triple room looking out to the sea through an open door",
+        src: "/images/rooms/seaview-bungalow/03-seaview.jpg",
+        alt: "Seaview bungalow looking out to the sea through an open door",
       },
       {
-        src: "/images/rooms/triple/04-seaview2.jpg",
-        alt: "Bed framed by the sea view from the triple room",
+        src: "/images/rooms/seaview-bungalow/04-seaview2.jpg",
+        alt: "Bed framed by the sea view from the seaview bungalow",
       },
       {
-        src: "/images/rooms/triple/05-bed.jpg",
-        alt: "Made-up bed with bedside lamps in the triple room",
+        src: "/images/rooms/seaview-bungalow/05-bed.jpg",
+        alt: "Made-up bed with bedside lamps in the seaview bungalow",
       },
       {
-        src: "/images/rooms/triple/06-bed2.jpg",
-        alt: "Triple room with curtained windows and tiled floor",
+        src: "/images/rooms/seaview-bungalow/06-bed2.jpg",
+        alt: "Seaview bungalow with curtained windows and tiled floor",
       },
       {
-        src: "/images/rooms/triple/07-beds.jpg",
+        src: "/images/rooms/seaview-bungalow/07-beds.jpg",
         alt: "Two beds turned down with towel swans",
       },
       {
-        src: "/images/rooms/triple/08-swans.jpg",
+        src: "/images/rooms/seaview-bungalow/08-swans.jpg",
         alt: "Towel swans and hibiscus flowers on the bed",
       },
       {
-        src: "/images/rooms/triple/09-swans2.jpg",
-        alt: "Towel art laid out across the bed in the triple room",
+        src: "/images/rooms/seaview-bungalow/09-swans2.jpg",
+        alt: "Towel art laid out across the bed in the seaview bungalow",
       },
       {
-        src: "/images/rooms/triple/10-single.jpg",
-        alt: "Single bed and air-conditioning in the triple room",
+        src: "/images/rooms/seaview-bungalow/10-single.jpg",
+        alt: "Single bed and air-conditioning in the seaview bungalow",
       },
       {
-        src: "/images/rooms/triple/11-swans3.jpg",
-        alt: "Close view of towel swans on the triple room bed",
+        src: "/images/rooms/seaview-bungalow/11-swans3.jpg",
+        alt: "Close view of towel swans on the seaview bungalow bed",
       },
       {
-        src: "/images/rooms/triple/12-bath.jpg",
-        alt: "Bathroom with basin and shower in the triple room",
+        src: "/images/rooms/seaview-bungalow/12-bath.jpg",
+        alt: "Bathroom with basin and shower in the seaview bungalow",
       },
     ],
   },
@@ -311,7 +311,7 @@ export const experiences: Experience[] = [
     title: "Beyond the Shore",
     description:
       "Canyoneering at Kawasan, waterfall tours, island hopping, and whale watching — we arrange it all for you.",
-    image: "/images/diningfun.png",
+    image: "/images/gmaps1.jpg",
   },
 ];
 

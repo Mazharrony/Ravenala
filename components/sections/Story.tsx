@@ -17,8 +17,8 @@ export default function Story() {
             <Reveal>
               <div className="relative aspect-4/5 overflow-hidden rounded-[2rem] shadow-card">
                 <Image
-                  src="/images/staff.png"
-                  alt="The Ravenala family welcoming guests"
+                  src="/images/property/sunset-trail.jpg"
+                  alt="Garden path leading to the sea at sunset"
                   fill
                   sizes="(max-width: 1024px) 100vw, 45vw"
                   className="object-cover"
